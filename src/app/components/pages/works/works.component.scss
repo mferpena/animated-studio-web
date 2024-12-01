@@ -1,0 +1,9 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.banner-works {
+  width: 100%;
+  height: 450px;
+}

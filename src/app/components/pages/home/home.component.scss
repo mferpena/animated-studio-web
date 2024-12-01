@@ -1,0 +1,12 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 15%;
+  gap: 50px;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}

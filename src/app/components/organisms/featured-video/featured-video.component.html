@@ -1,0 +1,12 @@
+<div class="featured-video">
+  <div class="ratio ratio-16x9">
+    <iframe [src]="videoSrc | safeUrl" title="YouTube video" allowfullscreen></iframe>
+  </div>
+
+  <div class="col-md-6 video-info">
+    <h5>FEATURED VIDEO</h5>
+    <h3>{{ title }}</h3>
+    <p>{{ description }}</p>
+    <a [href]="link" target="_blank" rel="noopener noreferrer">Learn more</a>
+  </div>
+</div>

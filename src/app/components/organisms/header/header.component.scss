@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 15%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 17px;
+  div {
+    cursor: pointer;
+  }
+}
+
+.logo {
+  width: 150px;
+}
+
+img {
+  width: 25px;
+  cursor: pointer;
+}

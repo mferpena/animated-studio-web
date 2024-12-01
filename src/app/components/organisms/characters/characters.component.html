@@ -1,0 +1,9 @@
+<div class="character-container">
+  <h2>Who's Who: The Justice League</h2>
+  <div class="characters">
+    <div class="character" *ngFor="let hero of heroes">
+      <img [src]="hero.image" [alt]="hero.name" class="hero-image" />
+      <p class="hero-name">{{ hero.name }}</p>
+    </div>
+  </div>
+</div>

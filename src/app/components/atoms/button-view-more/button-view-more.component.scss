@@ -1,0 +1,15 @@
+.btn-view-more {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 15px;
+  text-transform: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-view-more:hover {
+  background-color: #333;
+}

@@ -1,0 +1,24 @@
+<div class="search-container">
+  <div class="search-bar">
+    <input
+      type="text"
+      [(ngModel)]="searchQuery"
+      placeholder="Search"
+      class="form-control"
+    />
+  </div>
+
+  <div class="product-list">
+    <h5>Most searched products:</h5>
+    <div
+      class="product-item"
+      *ngFor="let product of products | filter : searchQuery : 'name'"
+    >
+      <img [src]="product.image" [alt]="product.name" class="product-image" />
+      <div class="product-details">
+        <p class="product-name">{{ product.name }}</p>
+        <p class="product-price">${{ product.price }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<header>
+  <nav>
+    <img class="logo" (click)="goToHome()" src="assets/logo.svg" />
+    <div (click)="goToWorks()">Works</div>
+    <div (click)="goToContactUs()">Contact us</div>
+  </nav>
+  <nav>
+    <img
+      src="assets/search.svg"
+      class="search-icon"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasSearch"
+      aria-controls="offcanvasSearch"
+    />
+    <img src="assets/person.svg" />
+    <img src="assets/shopping_cart.svg" />
+  </nav>
+</header>
+<div
+  class="offcanvas offcanvas-end"
+  tabindex="-1"
+  id="offcanvasSearch"
+  aria-labelledby="offcanvasSearchLabel"
+>
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasSearchLabel">Search Products</h5>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <app-product-search></app-product-search>
+  </div>
+</div>

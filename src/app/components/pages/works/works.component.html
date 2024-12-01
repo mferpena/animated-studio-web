@@ -1,0 +1,19 @@
+<app-alert *ngIf="showAlert" (confirm)="handleAlertConfirm()"></app-alert>
+
+<div *ngIf="!showAlert">
+  <div>
+    <img
+      class="banner-works"
+      src="https://via.placeholder.com/300x200?text=Default+Image+1"
+    />
+  </div>
+  <app-work-filter></app-work-filter>
+  <div class="grid-container">
+    <app-hover-image
+      *ngFor="let image of hoverImages"
+      [defaultImage]="image.defaultImage"
+      [hoverImage]="image.hoverImage"
+      [hoverText]="image.hoverText"
+    ></app-hover-image>
+  </div>
+</div>

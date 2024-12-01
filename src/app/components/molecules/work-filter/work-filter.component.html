@@ -1,0 +1,38 @@
+<div class="work-filter">
+  <ul class="category-list">
+    <li
+      *ngFor="let category of categories"
+      [class.active]="category === selectedCategory"
+      (click)="selectCategory(category)"
+    >
+      {{ category }}
+    </li>
+    <li
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasMore"
+      aria-controls="offcanvasMore"
+    >
+      More
+    </li>
+  </ul>
+</div>
+
+<div
+  class="offcanvas offcanvas-start"
+  tabindex="-1"
+  id="offcanvasMore"
+  aria-labelledby="offcanvasMoreLabel"
+>
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasMoreLabel">More Categories</h5>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Here you can add more categories or additional content.</p>
+  </div>
+</div>

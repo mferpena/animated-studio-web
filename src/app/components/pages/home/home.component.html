@@ -1,0 +1,20 @@
+<app-carousel></app-carousel>
+<div class="home">
+  <div class="news-container">
+    <app-featured-news-card
+      *ngFor="let news of featuredNews"
+      [imageSrc]="news.imageSrc"
+      [imageAlt]="news.imageAlt"
+      [title]="news.title"
+      [description]="news.description"
+      [buttonText]="news.buttonText"
+    ></app-featured-news-card>
+  </div>
+  <app-featured-video
+    [videoSrc]="'https://www.youtube.com/embed/dQw4w9WgXcQ'"
+    [title]="'DC Heroes Unite Part 1'"
+    [description]="'In DC Heroes United episode 2, part 1, about the Tower of Fates secrets.'"
+    [link]="'https://dcheroesunited.com/'"
+  ></app-featured-video>
+  <app-characters></app-characters>
+</div>
